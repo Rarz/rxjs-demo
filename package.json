@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/Rarz/rxjs-demo#readme",
   "devDependencies": {
-    "rxjs": "^6.3.3",
+    "rxjs": "^7.3.0",
     "ts-loader": "^5.3.2",
     "typescript": "^3.2.2"
   },
