@@ -1,8 +1,9 @@
-import { of } from 'rxjs';
+import { Observable, of } from 'rxjs';
 
-const source = of(1, 2, 3, 4, 5);
-const subscribe = source.subscribe(
-  (x) => console.log(x),
-  (err) => console.error(err),
-  () => console.log('closed')
-);
+const source$: Observable<number> = of(1, 2, 3, 4, 5);
+
+source$.subscribe({
+  next: (x: number) => console.log(x),
+  error: (e: Error) => console.log(e),
+  complete: () => console.log('closed')
+});
